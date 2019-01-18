@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Winnovation is the US subsidiary of Bouygues Group, a worldwide diversified industrial group based in France and organised around 3 sectors of activity: construction, telecoms and medias.">
+    <meta name="author" content="Winnovation Bouygues US">
+    <link rel="icon" type="image/png" href="assets/byUS_carre.png" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    "/assets/bootstrap/bootstrap.min.css" %>
+    <%= javascript_include_tag "/assets/bootstrap_js/bootstrap.min.js" %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+    <title>Bouygues US - Winnovation</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/application.scss" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="assets/fonts/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,800" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="assets/popups/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/creative.min.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132766434-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132766434-1');
+    </script>
+
+
+
+  </head>
+
+
+
+
+
+  <body id="page-top">
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/">Bouygues USA <em class="reducing-name">- Winnovation</em></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/startups">For Start-ups</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/investment">For Corporates</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/use-case">Use Cases</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="/#team">The Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
+                </li>
+                <% if logged_in? %>
+                <li><%= link_to "Admin Users", users_path, method: :get, class: "btn btn-xs background-grey" %></li>
+                <li><%= link_to "Admin Partners", partners_path, method: :get, class: "btn btn-xs background-grey" %></li>
+                <li><%= link_to "Se déconnecter", logout_path, method: :get, class: "btn btn-xs btn-danger" %></li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <%= yield %>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Ready to connect with us? Send us an email or contact us on LinkedIn and we will get back to you as soon as possible!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
+            <p>
+              <a href="mailto:contact@winnovation.net">contact@winnovation.net</a>
+            </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fas fa-building fa-3x mb-3 sr-contact-1"></i>
+            <p><strong>Winnovation</strong></p>
+              <p><%= User.first.address %></p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fab fa-linkedin fa-3x mb-3 sr-contact-1"></i>
+            <p><a href="https://www.linkedin.com/company/winnovation/" target="_blank">Discover our LinkedIn profile!</a></p>
+          </div>
+        </div>
+      </div>
+      <img class="logo-winnovation" src="assets/LOGO_final.png" alt="Logo de Winnovation Bouygues US">
+    </section>
+
+    <section class="changing-size bg-dark text-white zero-margin">
+      <div class="light-margin">
+        <p class="no-margin changing-font">Made with  ❤  in San Francisco by Diane Bunod.</p>
+      </div>
+    </section>
+
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="assets/jquery/jquery.min.js"></script>
+        <script src="assets/bootstrap_js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="assets/jquery_easing/jquery.easing.min.js"></script>
+        <script src="assets/scrollreveal/scrollreveal.min.js"></script>
+        <script src="assets/popups_js/jquery.magnific-popup.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="assets/creative.min.js"></script>
+
+
+  </body>
+
+
+
+
+</html>

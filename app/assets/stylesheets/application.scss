@@ -1,0 +1,335 @@
+
+@import "bootstrap/bootstrap.min.css";
+
+html
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.reducing-name
+{
+  font-style: italic;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+
+.middle-separation
+{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.div-background
+{
+  margin: 0;
+  padding: 100px 0;
+}
+
+.background-grey
+{
+  background-color: rgb(164, 164, 164);
+}
+
+.profile-picture
+{
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 100px;
+  margin: 0 40px 60px 40px;
+}
+
+.background-blue
+{
+  background-color: rgb(51, 51, 51);
+}
+
+.color-blue
+{
+  color: rgb(51, 51, 51);
+}
+
+.changing-size
+{
+  height: 50px;
+}
+
+.no-margin
+{
+  margin: 0;
+  padding: 0;
+  height: 20px;
+}
+
+.light-margin
+{
+  padding: 15px;
+  margin: 10px;
+  height: 20px;
+}
+
+.zero-margin
+{
+  padding: 0;
+  margin: 0;
+}
+
+.changing-font
+{
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.logo_bouygues
+{
+  height: 80px;
+  width: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.reduced-size
+{
+  font-size: 0.9em;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 20px;
+}
+
+.changing-size-and-font
+{
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contenu-use-case
+{
+  color: black;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.lessbig
+{
+  font-size: 1.1em;
+}
+
+.lessbig-1
+{
+  font-size: 1.4em;
+}
+
+.lessbig-2
+{
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.more-space
+{
+  margin: 30px 0;
+}
+
+.bigger-space-above
+{
+  margin-top: 50px;
+}
+
+.other-button
+{
+  color: white;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.other-button:hover
+{
+  color: #d0d1d2;
+  text-decoration: none;
+}
+
+.less-less-big
+{
+  font-size: 0.75em;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0 12px;
+  line-height: 17px;
+}
+
+.without-margin
+{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.margin-problem
+{
+  margin: 0 0 100px 0;
+}
+
+section#services
+{
+  padding-bottom: 30px;
+  padding-top: 100px;
+}
+
+.without-margin-all
+{
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+
+.figures-adjustment
+{
+  font-size: 1.4em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.margin-figures
+{
+  padding: 20px 0px;
+}
+
+.reduced-figures
+{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.6em;
+  color: rgb(233, 98, 46);
+}
+
+@media screen and (max-width: 710px) and (min-width: 520px)
+{
+
+  .figures-adjustment
+  {
+    font-size: 1em;
+  }
+
+  .reduced-figures
+  {
+    font-size: 0.6em;
+  }
+
+}
+
+
+@media screen and (max-width: 520px)
+{
+
+  .without-margin-all
+  {
+    display: none;
+  }
+
+  .no-margin-3
+  {
+    margin: 0;
+    padding: 80px 5px;
+  }
+
+  .no-margin-4
+  {
+    margin: 20px;
+    padding: 25px 5px;
+  }
+
+}
+
+
+
+
+.no-margin-2
+{
+  margin: 0;
+  padding: 20px 0;
+}
+
+.no-margin-3
+{
+  margin: 0;
+  padding: 80px 20px;
+}
+
+.no-margin-4
+{
+  margin: 20px;
+  padding: 25px 20px;
+}
+
+.aligning-items
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-aligned-2
+{
+  text-align: center;
+}
+
+section.contract
+{
+  margin-bottom: 120px;
+}
+
+section#portfolio
+{
+  margin-bottom: 100px;
+}
+
+.logo-winnovation
+{
+  height: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+section#contact
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.login-marges
+{
+  margin: 0;
+  padding: 100px 50px;
+}
+
+.login-marges-2
+{
+  margin: 20px;
+  padding: 10px;
+}
+
+.article-title
+{
+  list-style-type: none;
+}
+
+.form-center
+{
+  width: 1000px;
+}

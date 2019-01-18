@@ -1,0 +1,7 @@
+{
+  "name": "winnovation_website",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
